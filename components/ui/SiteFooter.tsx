@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ARC_PROOF_TX_URL } from '@/lib/chains/supported';
+import { ARC_PROOF_TX_URL, LIVE_APP_URL, PITCH_DECK_URL } from '@/lib/chains/supported';
 
 type FooterLink = {
   href: string;
@@ -17,8 +17,9 @@ const PRODUCT: FooterLink[] = [
 ];
 
 const PLATFORM: FooterLink[] = [
-  { href: '/', label: 'Live' },
+  { href: LIVE_APP_URL, label: 'Live', external: true },
   { href: '/litepaper', label: 'Litepaper' },
+  { href: PITCH_DECK_URL, label: 'Pitch deck', external: true },
   { href: 'https://github.com/AmaanSayyad/Arcoh', label: 'GitHub', external: true },
 ];
 
@@ -27,12 +28,6 @@ const RESOURCES: FooterLink[] = [
   { href: 'https://explorer.arc.io', label: 'Arc explorer', external: true },
   { href: ARC_PROOF_TX_URL, label: 'Treasury transfer', external: true },
   { href: 'https://www.circle.com/usdc', label: 'USDC', external: true },
-];
-
-const COMMUNITY: FooterLink[] = [
-  { href: 'https://x.com/Arcoh', label: 'X', external: true },
-  { href: 'https://t.me/arcoh', label: 'Telegram', external: true },
-  { href: 'https://t.me/amaan029', label: 'Founder', external: true },
 ];
 
 function LinkMark({ logo }: { logo?: string }) {
@@ -110,12 +105,10 @@ export function SiteFooter() {
           <div className="flex flex-col items-start gap-3">
             <div className="flex flex-wrap items-center gap-2">
               <Chip href="/trade" label="Trade" internal />
-              <Chip href="/" label="Live" internal />
+              <Chip href={LIVE_APP_URL} label="Live" />
               <Chip href="/litepaper" label="Litepaper" internal />
+              <Chip href={PITCH_DECK_URL} label="Pitch deck" />
               <Chip href="https://github.com/AmaanSayyad/Arcoh" label="GitHub" />
-              <Chip href="https://x.com/Arcoh" label="X" />
-              <Chip href="https://t.me/arcoh" label="Telegram" />
-              <Chip href="https://t.me/amaan029" label="Founder" />
             </div>
             <div className="flex flex-wrap items-center gap-2">
               <span className="mr-1 text-[13px] text-white/70">Built on</span>
@@ -126,11 +119,10 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mb-10 grid grid-cols-2 gap-8 lg:grid-cols-4 lg:gap-10">
+        <div className="mb-10 grid grid-cols-2 gap-8 lg:grid-cols-3 lg:gap-10">
           <Col title="Product" links={PRODUCT} />
           <Col title="Platform" links={PLATFORM} />
           <Col title="Resources" links={RESOURCES} />
-          <Col title="Community" links={COMMUNITY} />
         </div>
 
         <div className="space-y-3 border-t border-[#FFFFFF]/20 pt-8 text-[12px] leading-relaxed text-white/75">

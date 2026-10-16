@@ -35,6 +35,12 @@ export const ARC_USDC_EMITTER = '0xffffFFFfFFffffffffffffffFfFFFfffFFFfFFfE' as 
 /** Mempool floor from the Arc EVM differences. */
 export const ARC_MIN_MAX_FEE_PER_GAS = 20n * 10n ** 9n;
 
+/** Public desk. */
+export const LIVE_APP_URL = 'https://arcoh.vercel.app' as const;
+
+/** Pitch deck. */
+export const PITCH_DECK_URL = 'https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing' as const;
+
 /** 0.001 USDC moved from the Arc treasury to the fee wallet. The footer and litepaper link this receipt. */
 export const ARC_PROOF_TX = '0x9863b9607562d3893d1a8d9d2b3bc755a5db2e1506890550e0c1ddd39bdbed6b' as const;
 export const ARC_PROOF_TX_URL = `https://explorer.arc.io/tx/${ARC_PROOF_TX}` as const;

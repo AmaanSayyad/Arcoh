@@ -400,10 +400,8 @@ export default function WaitlistPage() {
                     <div className="footer-meta-item">2026 Amaan Jilani Sayyad. MIT License.</div>
 
                     <div className="footer-link-group">
-                        <a href="/" className="footer-meta-item">Live</a>
-                        <a href="https://x.com/Arcoh" target="_blank" rel="noopener noreferrer" className="footer-meta-item">X</a>
-                        <a href="https://t.me/arcoh" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Telegram</a>
-                        <a href="https://t.me/amaan029" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Founder</a>
+                        <a href="https://arcoh.vercel.app" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Live</a>
+                        <a href="https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Pitch deck</a>
                     </div>
 
                     <div className="footer-link-group">

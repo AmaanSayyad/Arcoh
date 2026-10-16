@@ -15,6 +15,7 @@ function getAllowedOrigins(request: NextRequest): Set<string> {
     [
       request.nextUrl.origin,
       process.env.NEXT_PUBLIC_APP_URL?.trim(),
+      'https://arcoh.vercel.app',
     ].filter((value): value is string => Boolean(value)),
   );
 }

@@ -22,10 +22,11 @@ That treasury is the address every deposit and withdrawal uses. The footer and t
 
 | | |
 |---|---|
+| **Live** | https://arcoh.vercel.app |
 | **Trade** | /trade |
 | **Litepaper** | /litepaper |
+| **Pitch deck** | https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing |
 | **GitHub** | https://github.com/AmaanSayyad/Arcoh |
-| **Founder** | https://t.me/amaan029 |
 
 ## Judges
 
@@ -511,11 +512,9 @@ The founder is one person: Amaan Sayyad, a blockchain developer and entrepreneur
 | Experience | 50 hackathon wins, 10+ shipped Web3 products, 3 times a founder, 8 companies, 12 times a speaker, 3 grants. Research papers, copyrights, and patents. |
 | Location | Navi Mumbai, India |
 | Email | amaansayyad2001@gmail.com |
-| X | https://x.com/amaanbiz |
 | GitHub | https://github.com/AmaanSayyad |
 | LinkedIn | https://www.linkedin.com/in/amaan-sayyad- |
 | Portfolio | https://amaansayyad.com |
-| Telegram | https://t.me/amaan029 |
 
 The problem came from using a Web2 binary app. That account is in [Story and inspiration](#story-and-inspiration): a paper-mode win, a real-money loss, and public threads about trial results that did not match real results. The five-year wait was for a public price fast enough to settle a short round.
 
@@ -533,7 +532,7 @@ One file: `.env`. Do not add `.env.local`. Next.js would let `.env.local` overri
 
 | Use | Names |
 |---|---|
-| App | `NEXT_PUBLIC_APP_URL` (optional until there is a real origin), `NEXT_PUBLIC_PROJECT_ID` |
+| App | `NEXT_PUBLIC_APP_URL` is https://arcoh.vercel.app, `NEXT_PUBLIC_PROJECT_ID` |
 | Arc | `NEXT_PUBLIC_ARC_TREASURY_ADDRESS`, `ARC_TREASURY_SECRET_KEY` |
 | Fee wallet | `NEXT_PUBLIC_PLATFORM_FEE_WALLET_EVM` |
 | Database | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY` |
@@ -596,7 +595,7 @@ The local desk is http://localhost:3000.
 
 Admin routes require the session from `DASHBOARD_PASSWORD`. The dashboard is `/dashboard`.
 
-Report a vulnerability through `docs/SECURITY_REPORTING.md` or Telegram at https://t.me/amaan029.
+Report a vulnerability through `docs/SECURITY_REPORTING.md`.
 
 ---
 
@@ -604,8 +603,9 @@ Report a vulnerability through `docs/SECURITY_REPORTING.md` or Telegram at https
 
 | | |
 |---|---|
+| Live | https://arcoh.vercel.app |
 | Trade | /trade |
 | Litepaper | /litepaper |
+| Pitch deck | https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing |
 | GitHub | https://github.com/AmaanSayyad/Arcoh |
 | Leaderboard | /leaderboard |
-| Founder | https://t.me/amaan029 |

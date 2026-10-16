@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useStore } from '@/lib/store';
 import { useToast } from '@/lib/hooks/useToast';
-import { openReferralShareOnX, referralLandingUrl } from '@/lib/referral/shareOnX';
+import { referralLandingUrl } from '@/lib/referral/shareOnX';
 import { displayReferralCode } from '@/lib/brand/names';
 
 function shorten(addr: string) {
@@ -106,14 +106,6 @@ export default function ReferralPage() {
                                     {copied === 'link' ? 'Copied' : 'Copy link'}
                                 </button>
                             </div>
-                            <button
-                                type="button"
-                                disabled={!referralLink}
-                                onClick={() => referralLink && openReferralShareOnX(referralLink)}
-                                className="neon-btn h-11 text-sm disabled:opacity-40 lg:col-span-2"
-                            >
-                                Share on X
-                            </button>
                         </div>
                     ) : (
                         <div className="flex flex-col items-start gap-4 py-2">

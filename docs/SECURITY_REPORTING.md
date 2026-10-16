@@ -24,7 +24,6 @@ Please provide as much of the following as you can:
 
 ## Where to report
 
-- Telegram: https://t.me/amaan029
 - If GitHub security features are enabled for this repo, use the platform’s security reporting flow.
 
 ## What we will do after receiving a report

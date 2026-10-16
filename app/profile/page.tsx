@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useStore, useHouseBalance, useWalletAddress, useIsConnected } from '@/lib/store';
 import { useToast } from '@/lib/hooks/useToast';
-import { openReferralShareOnX, referralLandingUrl } from '@/lib/referral/shareOnX';
+import { referralLandingUrl } from '@/lib/referral/shareOnX';
 import { chainMark, useArcohDisconnect } from '@/components/wallet/WalletConnect';
 import { getFeePercentLabel } from '@/lib/fees/platformFee';
 import { assetLogo } from '@/lib/assets/logos';
@@ -76,7 +76,7 @@ export default function ProfilePage() {
 
     const [isEditing, setIsEditing] = useState(false);
     const [newUsername, setNewUsername] = useState('');
-    const [copied, setCopied] = useState<'code' | 'address' | null>(null);
+    const [copied, setCopied] = useState<'code' | 'address' | 'link' | null>(null);
     const toast = useToast();
     const disconnectWallet = useArcohDisconnect();
 
@@ -92,7 +92,7 @@ export default function ProfilePage() {
         else toast.error('That name is taken or invalid.');
     };
 
-    const copyText = async (text: string, kind: 'code' | 'address') => {
+    const copyText = async (text: string, kind: 'code' | 'address' | 'link') => {
         if (!text) return;
         await navigator.clipboard.writeText(text);
         setCopied(kind);
@@ -304,11 +304,11 @@ export default function ProfilePage() {
                                         toast.error('Referral code is not ready yet.');
                                         return;
                                     }
-                                    openReferralShareOnX(referralLandingUrl(shownReferralCode));
+                                    copyText(referralLandingUrl(shownReferralCode), 'link');
                                 }}
                                 className="neon-btn mt-3 h-11 w-full text-sm"
                             >
-                                Share
+                                {copied === 'link' ? 'Copied' : 'Copy link'}
                             </button>
                             <Link href="/referrals" className="mt-3 block text-center text-sm text-[#E4E4E4] hover:text-white">Rewards</Link>
                         </section>

@@ -2,7 +2,7 @@
 
 import MermaidDiagram from '@/components/ui/MermaidDiagram';
 import { SiteFooter } from '@/components/ui/SiteFooter';
-import { ARC_PROOF_TX_URL } from '@/lib/chains/supported';
+import { ARC_PROOF_TX_URL, LIVE_APP_URL, PITCH_DECK_URL } from '@/lib/chains/supported';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -318,6 +318,8 @@ const chip =
   'inline-flex h-8 items-center rounded-full border border-white/10 px-3 text-xs text-[#E4E4E4] transition hover:border-[#7005FC] hover:text-white';
 
 const links = [
+  { href: LIVE_APP_URL, label: 'Live' },
+  { href: PITCH_DECK_URL, label: 'Pitch deck' },
   { href: ARC_PROOF_TX_URL, label: 'Arc transfer' },
   { href: PROJECT_GITHUB, label: 'GitHub' },
 ];
@@ -436,8 +438,6 @@ export default function LitepaperPage() {
                     Solo founder. 50 hackathon wins, 10+ shipped Web3 products, 3 times a founder, 8 companies, 12 times a speaker, 3 grants. Research papers, copyrights, and patents.
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
-                    <a href="https://t.me/amaan029" target="_blank" rel="noreferrer" className={chip}>Telegram</a>
-                    <a href="https://x.com/amaanbiz" target="_blank" rel="noreferrer" className={chip}>X</a>
                     <a href="https://www.linkedin.com/in/amaan-sayyad-" target="_blank" rel="noreferrer" className={chip}>LinkedIn</a>
                     <a href="https://amaansayyad.com" target="_blank" rel="noreferrer" className={chip}>Portfolio</a>
                   </div>
