@@ -1,5 +1,4 @@
 {
-  "regions": ["iad1", "bom1"],
   "git": {
     "deploymentEnabled": true
   }
