@@ -1,0 +1,72 @@
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  serverExternalPackages: [],
+  // The repo sits inside another folder that has its own lockfile. Pin the
+  // root here so Next stops warning and watching the parent directory.
+  turbopack: {
+    root: import.meta.dirname,
+    resolveAlias: {
+      'pino-pretty': './lib/shims/empty.ts',
+      lokijs: './lib/shims/empty.ts',
+      encoding: './lib/shims/empty.ts',
+    },
+  },
+  webpack: (config) => {
+    config.externals.push('pino-pretty', 'lokijs', 'encoding');
+    return config;
+  },
+  /* Smaller dev cold compiles: tree-shake heavy barrel-export packages */
+  experimental: {
+    optimizePackageImports: [
+      "lucide-react",
+      "framer-motion",
+      "recharts",
+      "@tanstack/react-query",
+    ],
+  },
+  typescript: {
+    // Ignore TypeScript errors in near-docs folder during build
+    ignoreBuildErrors: false,
+  },
+  async headers() {
+    const csp = [
+      "default-src 'self'",
+      "base-uri 'self'",
+      "object-src 'none'",
+      "frame-ancestors 'none'",
+      "form-action 'self'",
+      // Keep script policy compatible with Next/Turbopack runtime and in-app tooling.
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://va.vercel-scripts.com https://*.posthog.com https://s3.tradingview.com",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+      "font-src 'self' https://fonts.gstatic.com data:",
+      "img-src 'self' data: blob: https:",
+      "connect-src 'self' https: wss:",
+      // Allow only known embed providers used by the app.
+      "frame-src https://www.youtube.com https://youtube.com https://docs.google.com https://dexscreener.com https://s.tradingview.com https://www.tradingview-widget.com https://*.tradingview.com https://*.walletconnect.com https://*.walletconnect.org https://*.coinbase.com",
+      "upgrade-insecure-requests",
+    ].join("; ");
+
+    return [
+      {
+        source: "/:path*",
+        headers: [
+          { key: "Content-Security-Policy", value: csp },
+          { key: "X-Frame-Options", value: "DENY" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+          // COOP same-origin breaks Coinbase Smart Wallet and other popup-based wallets (opener communication).
+        ],
+      },
+      {
+        source: "/api/:path*",
+        headers: [
+          { key: "Vary", value: "Origin" },
+        ],
+      },
+    ];
+  },
+};
+
+export default nextConfig;

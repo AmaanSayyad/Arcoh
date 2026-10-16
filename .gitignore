@@ -1,0 +1,15 @@
+node_modules
+.next
+.env
+.env.*
+!.env.example
+out
+dist
+.vercel
+*.log
+.DS_Store
+coverage
+tsconfig.tsbuildinfo
+.agents
+.claude
+agent
