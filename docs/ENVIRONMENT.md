@@ -16,7 +16,7 @@ USDC is the native gas token at 18 decimals. The same balance is also an ERC-20 
 | Treasury key | `ARC_TREASURY_SECRET_KEY` | Server only. Signs USDC payouts |
 | Fee wallet | `NEXT_PUBLIC_PLATFORM_FEE_WALLET_EVM` | Receives the deposit and withdrawal fee in USDC |
 
-`NEXT_PUBLIC_APP_URL` is `https://arcoh.vercel.app`. A `.fun` placeholder is ignored.
+`NEXT_PUBLIC_APP_URL` is `https://arcoh.fun`.
 
 `NEXT_PUBLIC_PROJECT_ID` is the Reown project id from [dashboard.reown.com](https://dashboard.reown.com). The connect modal uses it. Add this origin under the project's allowed domains.
 

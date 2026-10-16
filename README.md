@@ -22,7 +22,7 @@ That treasury is the address every deposit and withdrawal uses. The footer and t
 
 | | |
 |---|---|
-| **Live** | https://arcoh.vercel.app |
+| **Live** | https://arcoh.fun |
 | **Trade** | /trade |
 | **Litepaper** | /litepaper |
 | **Pitch deck** | https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing |
@@ -532,7 +532,7 @@ One file: `.env`. Do not add `.env.local`. Next.js would let `.env.local` overri
 
 | Use | Names |
 |---|---|
-| App | `NEXT_PUBLIC_APP_URL` is https://arcoh.vercel.app, `NEXT_PUBLIC_PROJECT_ID` |
+| App | `NEXT_PUBLIC_APP_URL` is https://arcoh.fun, `NEXT_PUBLIC_PROJECT_ID` |
 | Arc | `NEXT_PUBLIC_ARC_TREASURY_ADDRESS`, `ARC_TREASURY_SECRET_KEY` |
 | Fee wallet | `NEXT_PUBLIC_PLATFORM_FEE_WALLET_EVM` |
 | Database | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_KEY` |
@@ -603,7 +603,7 @@ Report a vulnerability through `docs/SECURITY_REPORTING.md`.
 
 | | |
 |---|---|
-| Live | https://arcoh.vercel.app |
+| Live | https://arcoh.fun |
 | Trade | /trade |
 | Litepaper | /litepaper |
 | Pitch deck | https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing |

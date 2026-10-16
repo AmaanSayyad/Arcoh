@@ -14,7 +14,7 @@ if (!projectId) {
 }
 
 const configuredSite = (process.env.NEXT_PUBLIC_APP_URL || '').trim().replace(/\/$/, '');
-const siteUrl = configuredSite && !/tapt|\.fun/i.test(configuredSite) ? configuredSite : 'https://arcoh.vercel.app';
+const siteUrl = configuredSite && !/tapt/i.test(configuredSite) ? configuredSite : 'https://arcoh.fun';
 
 export const arcNetwork = defineChain({
   id: 5042,

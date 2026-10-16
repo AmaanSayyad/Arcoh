@@ -36,7 +36,7 @@ export const ARC_USDC_EMITTER = '0xffffFFFfFFffffffffffffffFfFFFfffFFFfFFfE' as 
 export const ARC_MIN_MAX_FEE_PER_GAS = 20n * 10n ** 9n;
 
 /** Public desk. */
-export const LIVE_APP_URL = 'https://arcoh.vercel.app' as const;
+export const LIVE_APP_URL = 'https://arcoh.fun' as const;
 
 /** Pitch deck. */
 export const PITCH_DECK_URL = 'https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing' as const;

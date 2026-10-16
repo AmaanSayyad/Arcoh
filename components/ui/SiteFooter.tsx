@@ -99,7 +99,7 @@ export function SiteFooter() {
         <div className="mb-10 flex flex-col items-start gap-6">
           <Link href="/" className="flex items-center gap-2.5">
             <img src="/brand/arcoh-mark.png" alt="" width={32} height={32} className="h-8 w-8 rounded-lg" />
-            <span className="text-[17px] font-medium">Arcoh</span>
+            <span className="text-[17px] font-medium">Arcoh.fun</span>
           </Link>
 
           <div className="flex flex-col items-start gap-3">
@@ -132,13 +132,13 @@ export function SiteFooter() {
           <p className="xl:whitespace-nowrap">
             Crypto and tokenized assets involve significant risk and can result in loss of capital. Nothing on this site is financial advice. House balances settle in USDC on Arc.
           </p>
-          <p className="pt-1 text-white/55">© {new Date().getFullYear()} Arcoh</p>
+          <p className="pt-1 text-white/55">© {new Date().getFullYear()} Arcoh.fun</p>
         </div>
       </div>
 
       <div className="overflow-hidden select-none" aria-hidden>
         <p className="whitespace-nowrap px-3 pb-2 text-[clamp(2.75rem,11vw,8rem)] font-bold leading-[0.85] tracking-[-0.04em] text-white sm:px-5 sm:pb-4">
-          Arcoh
+          Arcoh.fun
         </p>
       </div>
     </footer>

@@ -393,14 +393,14 @@ export default function WaitlistPage() {
 
             {/* FOOTER SECTION */}
             <footer className="py-24 px-10 border-t border-[#E6E0F5] bg-white relative z-10 w-full overflow-hidden">
-                <div className="huge-footer-logo">Arcoh</div>
+                <div className="huge-footer-logo">Arcoh.fun</div>
 
 
                 <div className="footer-meta">
                     <div className="footer-meta-item">2026 Amaan Jilani Sayyad. MIT License.</div>
 
                     <div className="footer-link-group">
-                        <a href="https://arcoh.vercel.app" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Live</a>
+                        <a href="https://arcoh.fun" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Live</a>
                         <a href="https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Pitch deck</a>
                     </div>
 
