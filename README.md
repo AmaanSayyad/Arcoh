@@ -10,15 +10,23 @@ Arcoh is a short-chart desk for crypto, stocks, metals, and FX. A trader stakes 
 
 Arc is the settlement chain for the money. Deposits and withdrawals are native USDC transfers on Arc mainnet (chain ID 5042), and gas is paid in USDC. The chart round stays off the chain and only the funding moves on Arc.
 
-## Arc mainnet proof
+## Contract Address
 
-Treasury `0xCBae80461Bb820e4075035F765f8a46fA65a6ded`. Fee wallet `0x9B4d9039A96Bfd7320C865aaCC69F35b51f425a7`.
+Treasury `0xCBae80461Bb820e4075035F765f8a46fA65a6ded`
 
-A 0.001 USDC transfer from the treasury to the fee wallet confirmed on Arc mainnet:
+https://explorer.arc.io/address/0xCBae80461Bb820e4075035F765f8a46fA65a6ded
+
+Every deposit and withdrawal is a native USDC transfer to or from that address on Arc mainnet, chain ID 5042. The fee wallet is `0x9B4d9039A96Bfd7320C865aaCC69F35b51f425a7`. Circle’s USDC contract on Arc is `0x3600000000000000000000000000000000000000`.
+
+Verified transaction, 0.001 USDC from the treasury to the fee wallet:
 
 https://explorer.arc.io/tx/0x9863b9607562d3893d1a8d9d2b3bc755a5db2e1506890550e0c1ddd39bdbed6b
 
-That treasury is the address every deposit and withdrawal uses. The footer and the litepaper link the same receipt.
+A 0.01 USDC deposit into the treasury:
+
+https://explorer.arc.io/tx/0x09236a4a6d7db2b9c56fe84c016240bb0d9da6d9d585ca482f3cb9de6099838a
+
+The footer and the litepaper link the same treasury receipt. Demo video: https://youtu.be/zg29qlLYLUE
 
 | | |
 |---|---|
