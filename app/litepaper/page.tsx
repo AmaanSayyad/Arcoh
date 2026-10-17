@@ -2,7 +2,7 @@
 
 import MermaidDiagram from '@/components/ui/MermaidDiagram';
 import { SiteFooter } from '@/components/ui/SiteFooter';
-import { ARC_PROOF_TX_URL, LIVE_APP_URL, PITCH_DECK_URL } from '@/lib/chains/supported';
+import { ARC_PROOF_TX_URL, DEMO_VIDEO_URL, LIVE_APP_URL, PITCH_DECK_URL } from '@/lib/chains/supported';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
@@ -320,6 +320,7 @@ const chip =
 const links = [
   { href: LIVE_APP_URL, label: 'Live' },
   { href: PITCH_DECK_URL, label: 'Pitch deck' },
+  { href: DEMO_VIDEO_URL, label: 'Demo video' },
   { href: ARC_PROOF_TX_URL, label: 'Arc transfer' },
   { href: PROJECT_GITHUB, label: 'GitHub' },
 ];

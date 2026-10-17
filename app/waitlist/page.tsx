@@ -402,6 +402,7 @@ export default function WaitlistPage() {
                     <div className="footer-link-group">
                         <a href="https://arcoh.fun" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Live</a>
                         <a href="https://docs.google.com/presentation/d/1Q1_kyWm4d26gTm_NFJbI9LlcjrPwcwh7hy7-_Gg2s4Y/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Pitch deck</a>
+                        <a href="https://youtu.be/zg29qlLYLUE" target="_blank" rel="noopener noreferrer" className="footer-meta-item">Demo video</a>
                     </div>
 
                     <div className="footer-link-group">

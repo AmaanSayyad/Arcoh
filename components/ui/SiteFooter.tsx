@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { ARC_PROOF_TX_URL, LIVE_APP_URL, PITCH_DECK_URL } from '@/lib/chains/supported';
+import { ARC_PROOF_TX_URL, DEMO_VIDEO_URL, LIVE_APP_URL, PITCH_DECK_URL } from '@/lib/chains/supported';
 
 type FooterLink = {
   href: string;
@@ -20,6 +20,7 @@ const PLATFORM: FooterLink[] = [
   { href: LIVE_APP_URL, label: 'Live', external: true },
   { href: '/litepaper', label: 'Litepaper' },
   { href: PITCH_DECK_URL, label: 'Pitch deck', external: true },
+  { href: DEMO_VIDEO_URL, label: 'Demo video', external: true },
   { href: 'https://github.com/AmaanSayyad/Arcoh', label: 'GitHub', external: true },
 ];
 
@@ -108,6 +109,7 @@ export function SiteFooter() {
               <Chip href={LIVE_APP_URL} label="Live" />
               <Chip href="/litepaper" label="Litepaper" internal />
               <Chip href={PITCH_DECK_URL} label="Pitch deck" />
+              <Chip href={DEMO_VIDEO_URL} label="Demo video" />
               <Chip href="https://github.com/AmaanSayyad/Arcoh" label="GitHub" />
             </div>
             <div className="flex flex-wrap items-center gap-2">
